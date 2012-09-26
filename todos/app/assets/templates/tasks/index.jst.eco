@@ -5,8 +5,5 @@
 	<input type="submit" value="Add">
 </form>
 
-<ul>
-<% for task in @tasks.models: %>
-	<li><%= task.get('name') %> <a href="#">delete</a></li>
-<% end %>
+<ul id="tasks">
 </ul>
