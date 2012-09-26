@@ -1,7 +1,12 @@
 <h1>Todo List!</h1>
 
+<form action="" id="form-task">
+	<input name="form_task_name" id="form_task_name" type="text">
+	<input type="submit" value="Add">
+</form>
+
 <ul>
 <% for task in @tasks.models: %>
-	<li><%= task.get('name') %></li>
+	<li><%= task.get('name') %> <a href="#">delete</a></li>
 <% end %>
 </ul>
